@@ -1,0 +1,10 @@
+zack@iloSona:~/Hacking/go-ethereum-sha256/cmd$ go get github.com/zack-bitcoin/go-ethereum/cmd/evm
+# github.com/zack-bitcoin/go-ethereum/cmd/evm
+../../../gocode/src/github.com/zack-bitcoin/go-ethereum/cmd/evm/main.go:68: cannot use db (type *ethdb.MemDatabase) as type []byte in function argument
+../../../gocode/src/github.com/zack-bitcoin/go-ethereum/cmd/evm/main.go:68: cannot use "" (type string) as type trie.Backend in function argument:
+									    string does not implement trie.Backend (missing Get method)
+../../../gocode/src/github.com/zack-bitcoin/go-ethereum/cmd/evm/main.go:68: cannot use trie.New(db, "") (type *trie.Trie) as type []byte in function argument
+../../../gocode/src/github.com/zack-bitcoin/go-ethereum/cmd/evm/main.go:68: not enough arguments in call to state.New
+../../../gocode/src/github.com/zack-bitcoin/go-ethereum/cmd/evm/main.go:147: undefined: vm.ClosureRef
+../../../gocode/src/github.com/zack-bitcoin/go-ethereum/cmd/evm/main.go:154: undefined: vm.ClosureRef
+../../../gocode/src/github.com/zack-bitcoin/go-ethereum/cmd/evm/main.go:159: undefined: vm.ClosureRef
