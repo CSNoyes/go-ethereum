@@ -36,7 +36,10 @@ const (
 	NOT
 	BYTE
 
-	SHA3 = 0x20
+)
+const (
+	SHA3 OpCode = 0x20 + iota
+	SHA256
 )
 
 const (
@@ -201,7 +204,7 @@ var opCodeToString = map[OpCode]string{
 
 	// 0x20 range - crypto
 	SHA3: "SHA3",
-
+	SHA256: "SHA256",
 	// 0x30 range - closure state
 	ADDRESS:      "ADDRESS",
 	BALANCE:      "BALANCE",

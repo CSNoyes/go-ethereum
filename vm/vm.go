@@ -398,6 +398,13 @@ func (self *Vm) Run(me, caller ContextRef, code []byte, value, gas, price *big.I
 			stack.Push(base)
 
 			// 0x20 range
+		case SHA256:
+			size, offset := stack.Popn()
+			data := crypto.Sha256(mem.Get(offset.Int32(), size.Int32()))
+
+			stack.Push(ethutil.BigD(data))
+
+			self.Printf(" => %x", data)
 		case SHA3:
 			size, offset := stack.Popn()
 			data := crypto.Sha3(mem.Get(offset.Int64(), size.Int64()))

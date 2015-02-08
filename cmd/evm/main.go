@@ -36,7 +36,8 @@ import (
 	"github.com/ethereum/go-ethereum/ethutil"
 	"github.com/ethereum/go-ethereum/logger"
 	"github.com/ethereum/go-ethereum/state"
-	"github.com/ethereum/go-ethereum/vm"
+	//"github.com/ethereum/go-ethereum/vm"
+	"github.com/zack-bitcoin/go-ethereum/vm"
 )
 
 var (
